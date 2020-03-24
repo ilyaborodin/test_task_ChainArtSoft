@@ -20,5 +20,10 @@ for char in text:
         result += pre_char
     pre_char = char
     counter = 1
+else:
+    if counter % 2 == 0:
+        result += ""
+    elif counter % 2 == 1:
+        result += pre_char
 
 print(result)
